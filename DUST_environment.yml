@@ -1,0 +1,32 @@
+
+name: base
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python-eccodes
+  - ipython
+  - cdsapi
+  - genshi
+  - ecmwf-api-client
+  - vim
+  - snakemake
+  - eofs
+  - nco
+  - git
+  - xarray
+  - matplotlib
+  - graphviz
+  - cartopy
+  - numba
+  - dask
+  - pandas
+  - scipy
+  - plotly
+  - cfgrib
+  - cdo
+  - ipykernel
+  - seaborn 
+  - jupyter
+  - xlrd
