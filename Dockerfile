@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y vim
 ADD DUST_environment.yml DUST_environment.yml
 RUN conda env create -f DUST_environment.yml && conda clean -yt
 RUN ["/bin/bash" , "-c", ". /opt/conda/etc/profile.d/conda.sh && \
-    conda activate pangeo && \
+    conda activate dust && \
     python -m pip install ipykernel && \
     ipython kernel install --name dust && \
     python -m ipykernel install --name=dust && \
