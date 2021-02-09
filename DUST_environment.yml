@@ -1,5 +1,5 @@
 
-name: base
+name: dust
 channels:
   - conda-forge
   - bioconda
