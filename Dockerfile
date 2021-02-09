@@ -9,8 +9,15 @@ RUN apt-get update && apt-get install -y vim
 # Install requirements for Python 3
 
 ADD DUST_environment.yml DUST_environment.yml
+RUN conda env create -f DUST_environment.yml && conda clean -yt
+RUN ["/bin/bash" , "-c", ". /opt/conda/etc/profile.d/conda.sh && \
+    conda activate pangeo && \
+    python -m pip install ipykernel && \
+    ipython kernel install --name dust && \
+    python -m ipykernel install --name=dust && \
+    conda deactivate && \
+    conda init bash"]
 
-RUN conda env create -f DUST_environment.yml
 
 
 USER notebook
