@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y vim
 
 # Install requirements for Python 3
 
-ADD Dust_environment.yml Dust_environment.yml
+ADD DUST_environment.yml DUST_environment.yml
 
 RUN conda env update -f Dust_environment.yml
 
