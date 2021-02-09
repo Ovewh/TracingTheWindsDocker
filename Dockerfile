@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y vim
 
 ADD DUST_environment.yml DUST_environment.yml
 
-RUN conda env update -f DUST_environment.yml
+RUN conda env create -f DUST_environment.yml
 
 
 USER notebook
