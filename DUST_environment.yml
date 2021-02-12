@@ -34,3 +34,6 @@ dependencies:
   - hdf5
   - pip
   - scikit-image
+  - nodejs
+  - netcdf4
+  - ipympl
