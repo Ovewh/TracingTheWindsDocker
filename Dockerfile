@@ -13,8 +13,14 @@ RUN conda env create -f DUST_environment.yml && conda clean -yt
 RUN ["/bin/bash" , "-c", ". /opt/conda/etc/profile.d/conda.sh && \
     conda activate dust && \
     python -m pip install ipykernel && \
+    python -m pip install "jupyter-kite<2.0.0" && \
+    jupyter labextension install "@kiteco/jupyterlab-kite" && \
     ipython kernel install --name dust && \
     python -m ipykernel install --name=dust && \
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+    jupyter labextension install jupyterlab-datawidgets && \
+    jupyter labextension install @jupyterlab/debugger && \
+    jupyter labextension install @jupyterlab/toc && \
     conda deactivate && \
     conda init bash"]
 
