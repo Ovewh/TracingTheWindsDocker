@@ -15,7 +15,7 @@ RUN ["/bin/bash" , "-c", ". /opt/conda/etc/profile.d/conda.sh && \
     python -m pip install ipykernel && \
     ipython kernel install --name dust && \
     python -m ipykernel install --name=dust && \
-    jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib && \
     jupyter labextension install jupyterlab-datawidgets && \
     jupyter labextension install @jupyterlab/debugger && \
     jupyter labextension install @jupyterlab/toc && \
