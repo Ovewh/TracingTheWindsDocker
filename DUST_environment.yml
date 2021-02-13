@@ -37,3 +37,4 @@ dependencies:
   - nodejs
   - netcdf4
   - ipympl
+  - h5netcdf
