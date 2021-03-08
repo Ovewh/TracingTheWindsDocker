@@ -38,3 +38,4 @@ dependencies:
   - netcdf4
   - ipympl
   - h5netcdf
+  - xeus-python
