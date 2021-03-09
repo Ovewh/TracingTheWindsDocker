@@ -1,4 +1,4 @@
-FROM quay.io/uninett/jupyter-spark:20210209-02eeb83
+FROM quay.io/uninett/jupyter-spark:20210217-9753737
 
 MAINTAINER Ove Haugvaldstad <ovewh@student.geo.uio.no>
 
